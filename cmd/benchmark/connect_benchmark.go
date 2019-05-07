@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/DrmagicE/gmqtt/cmd/benchmark/connect"
+	"github.com/gbl08ma/gmqtt/cmd/benchmark/connect"
 	"os"
 )
 

@@ -6,7 +6,7 @@
 * publish压力测试工具
 * subscribe压力测试工具
 ## 安装
-`$ go get -d github.com/DrmagicE/gmqtt/cmd/benchmark`
+`$ go get -d github.com/gbl08ma/gmqtt/cmd/benchmark`
 
 ## 开始
 开启要进行压力测试的MQTT broker

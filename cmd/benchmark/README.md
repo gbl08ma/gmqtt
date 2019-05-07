@@ -1,4 +1,4 @@
-[中文](https://github.com/DrmagicE/gmqtt/blob/master/cmd/benchmark/README_ZH.md)
+[中文](https://github.com/gbl08ma/gmqtt/blob/master/cmd/benchmark/README_ZH.md)
 # Benchmark Tool
 
 ## Features
@@ -6,7 +6,7 @@
 * Publishing benchmark
 * Subscribing benchmark 
 ## Installation
-`$ go get -d github.com/DrmagicE/gmqtt/cmd/benchmark`
+`$ go get -d github.com/gbl08ma/gmqtt/cmd/benchmark`
 
 ## Get Started
 Start the broker for testing

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/DrmagicE/gmqtt/cmd/broker/run"
+	"github.com/gbl08ma/gmqtt/cmd/broker/run"
 	"log"
 	"os"
 	"os/signal"

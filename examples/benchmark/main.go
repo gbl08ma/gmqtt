@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/DrmagicE/gmqtt"
+	"github.com/gbl08ma/gmqtt"
 	"log"
 	"net"
 	//_ "net/http/pprof"

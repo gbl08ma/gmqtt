@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/DrmagicE/gmqtt"
-	"github.com/DrmagicE/gmqtt/pkg/packets"
+	"github.com/gbl08ma/gmqtt"
+	"github.com/gbl08ma/gmqtt/pkg/packets"
 	"log"
 	"net"
 	"os"

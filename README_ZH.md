@@ -1,4 +1,4 @@
-# Gmqtt [![Build Status](https://travis-ci.org/DrmagicE/gmqtt.svg?branch=master)](https://travis-ci.org/DrmagicE/gmqtt) [![codecov](https://codecov.io/gh/DrmagicE/gmqtt/branch/master/graph/badge.svg)](https://codecov.io/gh/DrmagicE/gmqtt) [![Go Report Card](https://goreportcard.com/badge/github.com/DrmagicE/gmqtt)](https://goreportcard.com/report/github.com/DrmagicE/gmqtt)
+# Gmqtt [![Build Status](https://travis-ci.org/gbl08ma/gmqtt.svg?branch=master)](https://travis-ci.org/gbl08ma/gmqtt) [![codecov](https://codecov.io/gh/gbl08ma/gmqtt/branch/master/graph/badge.svg)](https://codecov.io/gh/gbl08ma/gmqtt) [![Go Report Card](https://goreportcard.com/badge/github.com/gbl08ma/gmqtt)](https://goreportcard.com/report/github.com/gbl08ma/gmqtt)
 
 # 更新日志
 ## 2018.12.15
@@ -23,7 +23,7 @@
 * 基于Go语言实现的V3.1.1版本的MQTT服务器
 * 提供MQTT服务器开发库，使用该库可以二次开发出功能更丰富的MQTT服务器应用
 * MQTT V3.1.1 版本的协议解析库
-* MQTT压力测试工具 [README.md](https://github.com/DrmagicE/gmqtt/blob/master/cmd/benchmark/README_ZH.md)
+* MQTT压力测试工具 [README.md](https://github.com/gbl08ma/gmqtt/blob/master/cmd/benchmark/README_ZH.md)
 
 # 功能特性
 * 内置了许多实用的钩子方法，使用者可以方便的定制需要的MQTT服务器（鉴权,ACL等功能）
@@ -32,11 +32,11 @@
 * 提供发布/订阅/取消订阅api
 
 # 安装
-```$ go get -u github.com/DrmagicE/gmqtt```
+```$ go get -u github.com/gbl08ma/gmqtt```
 # 开始
 
 ## 使用内置的MQTT服务器
-[内置MQTT服务器](https://github.com/DrmagicE/gmqtt/blob/master/cmd/broker/README_ZH.md)
+[内置MQTT服务器](https://github.com/gbl08ma/gmqtt/blob/master/cmd/broker/README_ZH.md)
 
 ## 使用MQTT服务器开发库
 当前内置的MQTT服务器功能比较弱，鉴权，ACL等功能均没有实现，建议采用MQTT服务器库进行二次开发：
@@ -87,7 +87,7 @@ func main() {
 
 
 # 文档说明
-[godoc](https://www.godoc.org/github.com/DrmagicE/gmqtt)
+[godoc](https://www.godoc.org/github.com/gbl08ma/gmqtt)
 ## 钩子方法
 Gmqtt实现了下列钩子方法
 * OnAccept  (仅支持在tcp/ssl下,websocket不支持)
@@ -211,7 +211,7 @@ $ go test -race .
 通过了 [paho.mqtt.testing](https://github.com/eclipse/paho.mqtt.testing).
 
 ## 压力测试
-[文档与测试结果](https://github.com/DrmagicE/gmqtt/blob/master/cmd/benchmark/README_ZH.md)
+[文档与测试结果](https://github.com/gbl08ma/gmqtt/blob/master/cmd/benchmark/README_ZH.md)
 
 # TODO 
 * 完善文档

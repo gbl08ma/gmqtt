@@ -2,7 +2,7 @@ package gmqtt
 
 import (
 	"container/list"
-	"github.com/DrmagicE/gmqtt/pkg/packets"
+	"github.com/gbl08ma/gmqtt/pkg/packets"
 	"sync"
 	"time"
 )
