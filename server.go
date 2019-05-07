@@ -3,15 +3,16 @@ package gmqtt
 import (
 	"context"
 	"errors"
-	"github.com/gbl08ma/gmqtt/logger"
-	"github.com/gbl08ma/gmqtt/pkg/packets"
-	"github.com/gorilla/websocket"
 	"net"
 	"net/http"
 	"strconv"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/gbl08ma/gmqtt/logger"
+	"github.com/gbl08ma/gmqtt/pkg/packets"
+	"github.com/gorilla/websocket"
 )
 
 var (
@@ -473,16 +474,21 @@ func (srv *Server) removeClientSubscriptions(clientID string) {
 
 // server event loop
 func (srv *Server) eventLoop() {
-	for {
-		select {
-		case register := <-srv.register:
-			srv.registerHandler(register)
-		case unregister := <-srv.unregister:
-			srv.unregisterHandler(unregister)
-		case msg := <-srv.msgRouter:
-			srv.msgRouterHandler(msg)
+	go func() {
+		for {
+			srv.registerHandler(<-srv.register)
 		}
-	}
+	}()
+	go func() {
+		for {
+			srv.unregisterHandler(<-srv.unregister)
+		}
+	}()
+	go func() {
+		for {
+			srv.msgRouterHandler(<-srv.msgRouter)
+		}
+	}()
 }
 
 // WsServer is used to build websocket server
